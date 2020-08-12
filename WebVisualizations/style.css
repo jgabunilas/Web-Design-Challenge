@@ -1,0 +1,25 @@
+.page-title {
+        color: teal
+}
+
+.image-title {
+        color: teal;
+        font-size: 22px;
+        font-weight: bold;
+}
+
+#sidebar-title {
+        color: deeppink
+}
+
+#landing-img {
+        width: 50%
+}
+
+img {
+        max-width: 100%
+}
+
+.highlighted {
+        border: 3px solid teal;
+}

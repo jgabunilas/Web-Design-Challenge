@@ -1,0 +1,87 @@
+<!-- Web Challenge Landing Page
+By Jason Gabunilas -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Latitude and the Weather</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+  <div class='container'>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">Latitude Adjustment</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Latitude vs. Max Temp</a>
+                                  <a class="dropdown-item" href="#">Latitude vs. Humidity</a>
+                                  <a class="dropdown-item" href="#">Latitude vs. Cloudiness</a>
+                                  <a class="dropdown-item" href="#">Latitude vs. Wind Speed</a>
+                                </div>
+                        <li class="nav-item active">
+                                <a class="nav-link" href="comparisons.html">Comparisons<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                                <a class="nav-link" href="data.html">Data<span class="sr-only">(current)</span></a>
+                        </li>                                          
+                  </ul>
+                </div>
+        </nav>
+        <div class='row'>
+                <div class = 'col-lg-8'>
+                        <h1 class = 'page-title'>Project Summary: Latitude and the Weather</h1>
+                
+                        <div>
+                                <hr/>
+                        </div>
+        
+                        <img class = 'float-left' id='landing-img' src='images/Fig1_Lat_v_Temp.png'>
+                        <p class='pull-left'>The purpose of this project was the determine what degree, if any, the latitude of a particular city on Earth impacts the local weather. A list of cities were created from a set of several hundred randomly-generated latitude and longitude coordinate pairs, using the citipy library to identify the nearest city to each set of coordinates. From this list of cities the OpenWeatherMap API was used to gather weather data pertaining to each city.</p>
+        
+                        <p>After gathering this data and organizing with Pandas, Matplotlib was used to plot several properties of the weather against latitude. For this exercise maximum temperature, humidity, cloudiness, and wind speed were analyzed. The visualizations, summary descriptions, and raw data can be found in the various pages of this site.</p>
+                </div>
+                <div class = 'col-lg-4'>
+                        <h2 id='sidebar-title'>Visualizations</h2>
+                
+                        <div>
+                                <hr/>
+                        </div>
+
+                        <div class='row'>
+                                <a class = 'col-lg-6 col-sm-3' href = 'temperature.html'>
+                                        <img src='images/Fig1_Lat_v_Temp.png' alt = 'Latitude vs. Temperature'>
+                                </a>
+                                <a class = 'col-lg-6 col-sm-3' href = 'humidity.html'>
+                                        <img src='images/Fig2_Lat_v_Hum.png'>
+                                </a>
+                                <a class = 'col-lg-6 col-sm-3' href = 'cloudiness.html'>
+                                        <img src='images/Fig3_Lat_v_Cloud.png'>
+                                </a>
+                                <a class = 'col-lg-6 col-sm-3' href = 'windspd.html'>
+                                        <img src='images/Fig4_Lat_v_Wind.png'>
+                                </a>
+                        </div>
+                
+                </div>
+        </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
