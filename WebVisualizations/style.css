@@ -3,7 +3,7 @@
 }
 
 .image-title {
-        color: mediumblue;
+        color: midnightblue;
         font-size: 22px;
         font-weight: bold;
 }
@@ -22,4 +22,14 @@ img {
 
 .highlighted {
         border: 3px solid limegreen;
+}
+
+nav {
+        background-color: #6D6D6D;
+}
+
+@media (max-width: 992px) {
+        nav {
+                background-color: black;
+        }
 }
