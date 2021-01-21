@@ -1,4 +1,4 @@
-# Web-Design-Challenge
+# Latitude Adjustment - A Meteorology Web Design Challenge
 
 The purpose of this website is to showcase newly-acquired skills in HTML, CSS, and Bootstrap. The approach utilized images and data that were generated from the for [Python Web APIs assignment](https://github.com/jgabunilas/python-api-challenge), which were used to construct a simple Bootstrap-powered website to display the data and provide easy, intuitive navigation.
 
